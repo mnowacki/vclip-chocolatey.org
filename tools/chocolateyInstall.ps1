@@ -1,0 +1,1 @@
+﻿Install-ChocolateyZipPackage -PackageName 'vclip' -Url 'http://www.bahraniapps.com/apps/vclip/vclip.php' -UnzipLocation "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)" -Checksum 'C908D66070E2FC9BF09B09506852A15C6579104CFA86F1157150EEB2D50026AD' -ChecksumType 'sha256'
