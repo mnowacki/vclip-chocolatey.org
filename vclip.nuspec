@@ -2,17 +2,27 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>vclip</id>
-    <version>2.0.0</version>
+    <version>2.0.0.1</version>
     <title>VClip</title>
     <authors>BahraniApps</authors>
     <owners>mnowacki</owners>
     <projectUrl>http://blog.bahraniapps.com/vclip/</projectUrl>
+    <packageSourceUrl>http://blog.bahraniapps.com/vclip/</packageSourceUrl>
+    <licenseUrl>http://blog.bahraniapps.com/vclip/</licenseUrl>
+    <docsUrl>http://blog.bahraniapps.com/vclip/</docsUrl>
+    <mailingListUrl>http://blog.bahraniapps.com/vclip/</mailingListUrl>
+    <bugTrackerUrl>http://blog.bahraniapps.com/vclip/</bugTrackerUrl>
     <iconUrl>http://blog.bahraniapps.com/wp-content/uploads/2016/01/vclipicon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>VClip is a simple tool to capture short video clip + loopback audio (speaker sound) from your screen pixels and speaker waves. VClip can output to many format (MP4, WEBM, OGG, AVI, GIF), and comes with 3 fps options (15,25,30).</description>
     <summary>VClip is a simple tool to capture short video clip</summary>
     <releaseNotes />
-    <copyright>(c) 2016 BahraniApps</copyright>
+    <copyright>(c) 2016-2018 BahraniApps</copyright>
     <tags>video clip capture making mp4 webm ogg avi gif</tags>
   </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
 </package>
